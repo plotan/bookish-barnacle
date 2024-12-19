@@ -1,14 +1,10 @@
-const http = require('http');
+const express = require('express');
+const app = express();
 
-const hostname = '0.0.0.0'; // Listen on all interfaces
-const port = 3001;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(3002, () => {
+  console.log('Server is running on http://localhost:3000');
 });
