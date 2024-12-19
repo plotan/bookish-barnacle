@@ -21,7 +21,7 @@ jobs:
       - name: Copy files to server
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@138.2.237.53 "
-            cd /path/to/your/app &&
+            cd /root/node/bookish-barnacle &&
             git pull origin main &&
             npm install &&
             pm2 restart all
