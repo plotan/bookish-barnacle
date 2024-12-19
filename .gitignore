@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# PM2 logs
+pms/
+
+# IDE files (VS Code, WebStorm, etc.)
+.vscode/
+.idea/
+
+# Dependency directories
+jspm_packages/
+
+# NPM package lock file (if you don't want to track it)
+package-lock.json
+
+# Coverage directory from test runs
+coverage/
+
+# Temporary files
+tmp/
+
+# MacOS-specific files
+*.swp
