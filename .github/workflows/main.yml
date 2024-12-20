@@ -20,7 +20,7 @@ jobs:
 
       - name: Copy files to server
         run: |
-            ssh -o StrictHostKeyChecking=no ubuntu@138.2.237.53 "
+            ssh -o StrictHostKeyChecking=no root@34.72.70.72 "
               sudo su -c 'cd /root/node/bookish-barnacle &&
               git pull origin main &&
               npm install &&
